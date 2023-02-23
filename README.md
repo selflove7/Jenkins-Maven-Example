@@ -10,7 +10,7 @@ To execute this project, you'll need the following tools installed on your syste
 2) Apache Maven (version 3.6.0 or higher)
 3) Jenkins (version 2.249.1 or higher)
 
-Installation
+<h3> Installation </h3>
 
 Clone the repository to your local machine:
 
@@ -24,9 +24,9 @@ Install the project dependencies using Maven:
 
 mvn install
 
-Usage
+<h3> Usage </h3>
 
-To execute the project using Jenkins:
+<h3> To execute the project using Jenkins: </h3>
 
 Create a new Jenkins job.
 
