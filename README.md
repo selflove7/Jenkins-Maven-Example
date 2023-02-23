@@ -1,39 +1,26 @@
 # Jenkins-Maven-Example
 
-This is an example Maven project that demonstrates how to use Jenkins to execute the project.
+This is an example Maven project configured to run in Jenkins. The project contains a simple Java program that outputs "Hello, world!" to the console.
 
 <h2 style="font-size:24px;"> Prerequisites </h2>
 
-To execute this project, you'll need the following tools installed on your system:
+Jenkins server
+Maven installed on the Jenkins server
+Java Development Kit (JDK) installed on the Jenkins server
 
-1) Java JDK (version 8 or higher)
-2) Apache Maven (version 3.6.0 or higher)
-3) Jenkins (version 2.249.1 or higher)
+<h3> Setup </h3>
 
-<h3> Installation </h3>
+Clone this repository onto your Jenkins server.
+Create a new Jenkins job using the "Maven project" option.
+In the "Source Code Management" section of the job configuration, select "Git" and provide the URL of the cloned repository.
+In the "Build" section of the job configuration, add a new "Invoke top-level Maven targets" build step.
+In the "Goals" field of the build step, enter "clean package".
+Save the job configuration.
 
-<h4> Clone the repository to your local machine: </h4>
 
-git clone https://github.com/selflove7/Jenkins-Maven-Example.git
+<h3> Execution </h3>
 
-<h4> Navigate to the project directory: </h4>
+Run the Jenkins job by clicking the "Build Now" button on the job page.
+Once the build completes, navigate to the "Console Output" section to view the build log.
+If the build was successful, the "Hello, world!" message should be printed to the console.
 
-cd example-maven-project
-
-<h4> Install the project dependencies using Maven: </h4>
-
-mvn install
-
-<h3> Usage </h3>
-
-<h4> To execute the project using Jenkins: </h4>
-
-Create a new Jenkins job.
-
-In the job configuration, specify the following:
-
-1) Source code management: select Git and provide the URL of the Git repository.
-2) Build: select "Invoke top-level Maven targets" and specify the Maven goals to execute (e.g. "clean install").
-3) You can also configure additional build settings such as triggers, build parameters, and post-build actions as needed.
-
-Save the job configuration and run the job to execute the Maven project.
