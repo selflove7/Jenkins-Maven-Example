@@ -12,21 +12,21 @@ To execute this project, you'll need the following tools installed on your syste
 
 <h3> Installation </h3>
 
-Clone the repository to your local machine:
+<h4> Clone the repository to your local machine: </h4>
 
 git clone https://github.com/selflove7/Jenkins-Maven-Example.git
 
-Navigate to the project directory:
+<h4> Navigate to the project directory: </h4>
 
 cd example-maven-project
 
-Install the project dependencies using Maven:
+<h4> Install the project dependencies using Maven: </h4>
 
 mvn install
 
 <h3> Usage </h3>
 
-<h3> To execute the project using Jenkins: </h3>
+<h4> To execute the project using Jenkins: </h4>
 
 Create a new Jenkins job.
 
