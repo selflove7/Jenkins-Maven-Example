@@ -9,13 +9,13 @@ To execute this project, you'll need the following tools installed on your syste
 2) Apache Maven (version 3.6.0 or higher)
 3) Jenkins (version 2.249.1 or higher)
 
-Installation
+#Installation
 
 Clone the repository to your local machine:
 
-git clone https://github.com/your-username/example-maven-project.git
+git clone https://github.com/selflove7/Jenkins-Maven-Example.git
 
-Navigate to the project directory:
+#Navigate to the project directory:
 
 cd example-maven-project
 
